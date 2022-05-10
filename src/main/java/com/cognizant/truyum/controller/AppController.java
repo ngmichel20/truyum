@@ -40,16 +40,28 @@ public class AppController {
         return "register_success";
     }
 
-    @GetMapping("/users")
+    @GetMapping("/menu")
     public String listUsers(Model model) {
-        List<User> listUsers = userRepo.findAll();
-        model.addAttribute("listUsers", listUsers);
+//        List<User> listUsers = userRepo.findAll();
+//        model.addAttribute("listUsers", listUsers);
 
         return "users";
     }
 
-    @GetMapping("/menu")
+    @GetMapping("/menu-item-list-customer")
     public String menu(Model model) {
-        return "menu-item";
+        return "menu-item-list-customer";
     }
+
+    @GetMapping("/cart")
+    public String cart(Model model) {
+        return "cart";
+    }
+
+    @GetMapping("/menu-item-list-customer-notification")
+    public String menuNotification(Model model) {
+        return "menu-item-list-customer-notification";
+    }
+
+
 }

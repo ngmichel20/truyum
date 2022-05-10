@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 	<head>
 		<title>truYum</title>
 		<link rel="icon" type="image/ico" href="./images/truyum-logo-dark.png" />
@@ -10,8 +10,11 @@
 			<span class="header-title">truYum</span>
 			<img class="header-logo" src="./images/truyum-logo-light.png" alt="truYum Logo"></img>
 			<nav>
-				<a class="nav-link" href="./menu-item-list-customer.html">Menu</a>
-				<a class="nav-link" href="./cart.html">Cart</a>
+				<a class="nav-link" href="./menu-item-list-customer">Menu</a>
+				<a class="nav-link" href="./cart">Cart</a>
+				<form th:action="@{/logout}" method="post">
+					<input class = "nav-link " type="submit" value="Sign Out"></input>
+				</form>
 			</nav>
 		</header>
 		<article>
@@ -28,7 +31,7 @@
 					<td class="col-left">Yes</td>
 					<td class="col-right">Rs. 99.00</td>
 					<td>
-						<a class="action-link" href="./cart-notification.html">Delete</a>
+						<a class="action-link" href="./cart-notification">Delete</a>
 					</td>
 				</tr>
 				<tr>
@@ -36,7 +39,7 @@
 					<td class="col-left">No</td>
 					<td class="col-right">Rs. 129.00</td>
 					<td>
-						<a class="action-link" href="./cart-notification.html">Delete</a>
+						<a class="action-link" href="./cart-notification">Delete</a>
 					</td>
 				</tr>
 				<tr>
@@ -44,7 +47,7 @@
 					<td class="col-left">No</td>
 					<td class="col-right">Rs. 149.00</td>
 					<td>
-						<a class="action-link" href="./cart-notification.html">Delete</a>
+						<a class="action-link" href="./cart-notification">Delete</a>
 					</td>
 				</tr>
 				<tr>
