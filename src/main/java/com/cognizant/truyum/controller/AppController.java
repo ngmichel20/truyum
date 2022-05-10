@@ -1,7 +1,5 @@
 package com.cognizant.truyum.controller;
 
-import java.util.List;
-
 import com.cognizant.truyum.model.User;
 import com.cognizant.truyum.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
