@@ -61,5 +61,10 @@ public class AppController {
         return "menu-item-list-customer-notification";
     }
 
+    @GetMapping("/cart-notification")
+    public String cartNotification(Model model) {
+        return "cart-notification";
+    }
+
 
 }
